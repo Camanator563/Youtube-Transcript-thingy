@@ -1,0 +1,8 @@
+from youtube_transcript_api import YouTubeTranscriptApi
+#Put your youtube id between the quotes
+video_id = "w3_0x6oaDmI"
+transcript = YouTubeTranscriptApi.get_transcript(video_id)
+
+# Below Prints the transcript text
+for item in transcript:
+    print(item['text'])
